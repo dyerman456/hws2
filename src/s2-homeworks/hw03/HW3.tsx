@@ -3,10 +3,6 @@ import { v1 } from 'uuid'
 import s2 from '../../s1-main/App.module.css'
 import GreetingContainer from './GreetingContainer'
 
-/*
-* 11 - сделать стили в соответствии с дизайном
-* */
-
 // types
 export type UserType = {
     _id: string // need to fix any
