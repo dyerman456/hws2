@@ -31,13 +31,9 @@ function Clock() {
     setShow(false)
   }
 
-  const stringDate = new Intl.DateTimeFormat('ru-RU', {day: "2-digit", month: "2-digit", year: "numeric"}).format(date)
+  const stringDate = date.toLocaleDateString('ru-RU')
 
-  const stringTime = new Intl.DateTimeFormat('ru-RU', {
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit'
-  }).format(date)
+  const stringTime = date.toLocaleTimeString('ru-RU')
 
   const stringDay = new Intl.DateTimeFormat('en-UK', {weekday: "long"}).format(date)
 
